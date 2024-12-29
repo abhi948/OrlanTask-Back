@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(cors());
 dotenv.config();
 
-const db = process.env.mongoUrl;
-const PORT = process.env.PORT;
+const db = 'mongodb+srv://mern:mernstack@cluster0.aouhbsf.mongodb.net/Orlan_Task?retryWrites=true&w=majority&appName=Cluster0';
+const PORT = 3000;
 
 mongoose.connect(db).then(
     ()=>{
